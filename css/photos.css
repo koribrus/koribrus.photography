@@ -1,0 +1,41 @@
+/* content flex layout */
+.photo__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: var(--primary-bg);
+  /* animation: fade-in 500ms forwards ease-out; */
+}
+
+.photo__row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 0;
+  transition: transform 1s, opacity 1s;
+}
+
+.photo__row a {
+  padding: 2rem 2.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.photo__row img {
+  width: 100%;
+}
+
+.photo-vertical {
+  flex-basis: 25%;
+  min-width: 275px;
+}
+
+.photo-horizontal {
+  width: 95%;
+  min-width: 325px;
+  flex-basis: 33.33%;
+}

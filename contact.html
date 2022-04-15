@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html id="contact" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="https://use.typekit.net/wum7hfv.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navigation_parallax.css" />
+    <link rel="stylesheet" href="./css/navigation_main.css" />
+    <link rel="stylesheet" href="./css/photos.css" />
+    <link rel="stylesheet" href="./css/@media.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script defer src="./js/script.js" type="module"></script>
+    <title>koribrus | contact</title>
+  </head>
+
+  <header>
+    <div class="overlay"></div>
+    <nav id="navbar__plx">
+      <div class="container" hidden_logo>
+        <div class="container-logo">
+          <a href="./index.html">
+            <h1>koribrus</h1>
+            <h5>photography</h5>
+          </a>
+        </div>
+      </div>
+      <div class="navigation" hidden_nav>
+        <ul class="nav-links">
+          <li hidden_home>
+            <a href="./index.html"><i class="nav-item fab fa-houzz"></i></a>
+          </li>
+          <li><a href="./cars.html" class="nav-item">cars</a></li>
+          <li><a href="./people.html" class="nav-item">people</a></li>
+          <li><a href="./urban.html" class="nav-item">urban</a></li>
+          <li><a href="./seaside.html" class="nav-item">seaside</a></li>
+          <li><a href="./korea.html" class="nav-item">korea</a></li>
+          <li><a href="#" class="nav-item active">contact</a></li>
+          <li>
+            <a href="https://www.instagram.com/koribrus/?hl=en" target="_blank"
+              ><i class="nav-item fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- small screen navigation -->
+      <nav id="navbar__main" class="nav-small-screen">
+        <input type="checkbox" class="toggler" autocomplete="off" />
+        <div class="hamburger"><div></div></div>
+        <div class="contents">
+          <div class="contents-overlay">
+            <div class="navigation">
+              <ul class="nav-links">
+                <li hidden_home>
+                  <a href="./index.html" class="nav-item">home</a>
+                </li>
+                <li>
+                  <a href="./cars.html" class="nav-item">cars</a>
+                </li>
+                <li><a href="./people.html" class="nav-item">people</a></li>
+                <li><a href="./urban.html" class="nav-item">urban</a></li>
+                <li><a href="./seaside.html" class="nav-item">seaside</a></li>
+                <li><a href="./korea.html" class="nav-item">korea</a></li>
+                <li><a href="#" class="nav-item active">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <main class="contact">
+    <div class="row">
+      <div class="column">
+        <div class="column-2">
+          <div class="form contact-element">
+            <div class="contact-header">
+              <h4>contact</h4>
+              <p>kori brus | victoria, can</p>
+              <a href="http://koribrus.com">koribrus.com</a>
+              <p>photography and web development</p>
+            </div>
+            <form action="./process.php" method="POST">
+              <div class="form-element">
+                <label for="name">name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="form-element">
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="form-element">
+                <label for="subject">subject</label>
+                <input type="text" id="subject" name="subject" />
+              </div>
+              <div class="form-element">
+                <label for="message">message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="50"
+                  rows="8"
+                ></textarea>
+              </div>
+              <div class="submit">
+                <input
+                  type="submit"
+                  value="send"
+                  id="submit"
+                  name="name"
+                  class="btn"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="column-1">
+          <img src="./img/kori-brus-profile.jpg" alt="Kori Brus" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr />
+  <footer>
+    <h6>&copy; koribrus photography</h6>
+  </footer>
+  <script src="./js/simple-lightbox.min.js"></script>
+</html>

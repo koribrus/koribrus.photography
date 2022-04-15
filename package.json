@@ -1,0 +1,17 @@
+{
+  "name": "koribrus-foto",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "koribrus",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-webmanifest": "^2.0.0",
+    "parcel": "^2.0.0"
+  }
+}

@@ -1,0 +1,169 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 93px;
+  position: relative;
+  transform-style: inherit;
+}
+
+p {
+  color: var(--primary-text);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.25rem;
+  margin: 0;
+  padding-top: 1.75rem;
+}
+
+/* parallax utilities */
+.parallax__page {
+  font-family: europa, sans-serif;
+  background: var(--primary-bg);
+  line-height: 1.1;
+  height: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.parallax__body {
+  /* color: var(--primary-bg); */
+  /* background-color: #333; */
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.spacer img {
+  width: 100%;
+}
+
+.title {
+  background-color: var(--primary-bg);
+  padding: 1rem;
+  /* animation: fade-in 750ms forwards ease-in-out; */
+}
+
+.nav-small-screen {
+  display: none;
+  z-index: -10;
+}
+
+.fade-transition {
+  animation: fade-in 500ms;
+}
+
+main,
+main:before {
+  background: 50% 50% / cover;
+}
+
+main * {
+  text-align: center;
+}
+
+/* showcase images */
+#cars main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../img/cars/chevrolet-vintage-blue-sc.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-height: 100vh;
+  /* animation: fade-in 500ms forwards ease-out; */
+}
+
+#people main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../img/people/man-fishing-ocean-clouds-korea-sc.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-height: 100vh;
+  /* animation: fade-in 500ms forwards ease-out; */
+}
+
+#urban main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../img/urban/yeosu-expo-bay-hotel-sc.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-height: 100vh;
+  /* animation: fade-in 500ms forwards ease-out; */
+}
+
+#seaside main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../img/seaside/footprints-beach-yeosu-korea-sc.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-height: 100vh;
+  /* animation: fade-in 500ms forwards ease-out; */
+}
+
+#korea main::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../img/korea/baby-buddha-statue-korea-sc.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  max-height: 100vh;
+  /* animation: fade-in 500ms forwards ease-out; */
+}

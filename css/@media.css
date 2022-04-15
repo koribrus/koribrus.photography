@@ -1,0 +1,455 @@
+/* ///////////////////////////////////////////////// */
+/* general formatting */
+@media (max-width: 1420px) {
+  /* remove main menu */
+  [hidden_nav] {
+    display: none;
+  }
+
+  /* reveal hamburger */
+  .nav-small-screen {
+    display: block;
+  }
+
+  /* move hamburger */
+  #cars #navbar__main,
+  #people #navbar__main,
+  #urban #navbar__main,
+  #seaside #navbar__main,
+  #korea #navbar__main,
+  #contact #navbar__main {
+    position: static;
+  }
+
+  #navbar__main .toggler {
+    top: 15px !important;
+    right: 20px !important;
+    transition: none !important;
+  }
+
+  #navbar__main .hamburger {
+    top: 15px !important;
+    right: 20px !important;
+    transition: none !important;
+  }
+
+  #navbar__main .toggler:not(:checked) + .hamburger,
+  #navbar__main .toggler:not(:checked) {
+    transition: none !important;
+  }
+
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(75vw);
+  }
+
+  /* parallax pages - hamburger color */
+  .parallax__body #navbar__main .hamburger > div {
+    background: var(--primary-text);
+  }
+
+  /* contact page - hamburger color */
+  #contact #navbar__main .hamburger > div {
+    background: var(--primary-text);
+  }
+
+  /* reset navigation content flex */
+  #navbar__plx .navigation ul {
+    display: block;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo__column {
+    padding: 1rem;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* portrait orientation */
+@media (min-width: 900px) and (max-width: 1200px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    /* menu slide translation amount. Overaly has to slide out further as screen size reduces in order to read menu items */
+    transform: translateX(70vw);
+  }
+}
+
+/* portrait orientation - contact page */
+@media (max-width: 1000px) {
+  #contact .contact {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  #contact .contact .row {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+  }
+
+  #contact .contact .column {
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+
+  #contact .contact .column .column-2 {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  #contact .contact .column-1 img {
+    min-width: 100vw;
+    max-width: 770px;
+    height: auto;
+    margin: auto;
+    /* object-fit: cover; */
+  }
+
+  #contact .form {
+    min-width: 100%;
+  }
+
+  #contact .contact-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(65vw);
+    /* menu overlay size (for curve arc). Overlay has to increase w smaller screen size to keep equivalent grade of arc */
+    width: 160vw;
+    height: 160vw;
+  }
+}
+
+@media (max-width: 700px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(50vw);
+    width: 180vw;
+    height: 180vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(50vw);
+    width: 205vw;
+    height: 205vw;
+  }
+
+  [hidden_logo] {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(40vw);
+  }
+}
+
+@media (max-width: 400px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    width: 225vw;
+    height: 225vw;
+  }
+}
+
+@media (max-width: 280px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(30vw);
+    width: 259vw;
+    height: 259vw;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* portrait orientation for mobile */
+@media (max-width: 540px) {
+  /* homepage - scale logo */
+  #showcase .container-logo {
+    transform: scale(75%);
+  }
+
+  /* homepage - shift nav items on main menu */
+  .navigation__home .nav-links {
+    transform: translateX(35%);
+  }
+
+  /* add home link to main menu */
+  [hidden_home] {
+    display: list-item;
+  }
+
+  /* portrait - reduce navigation bar height for mobile and remove logo */
+  [hidden_logo] {
+    display: none;
+  }
+
+  header {
+    height: 9vh;
+  }
+
+  #navbar__plx {
+    height: 9vh;
+  }
+
+  #navbar__main .toggler {
+    top: 0 !important;
+  }
+
+  #navbar__main .hamburger {
+    top: 0 !important;
+  }
+
+  .parallax__body main {
+    margin-top: 60px;
+  }
+
+  /* reduce footer by half */
+  footer {
+    max-height: 50px;
+    margin-top: 0.7rem;
+  }
+
+  footer h6 {
+    padding: 2rem;
+  }
+
+  /* reduce photo padding by half */
+  .photo__row a {
+    padding: 1rem 1.25rem;
+  }
+
+  /* showcase image change */
+  [hidden_spacer] {
+    display: none;
+  }
+
+  [show_spacer] {
+    display: inline-block;
+  }
+
+  #cars main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../img/mobile_showcase/chevrolet-vintage-car-blue-mobile.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    max-height: 100vh;
+  }
+  #people main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../img/mobile_showcase/man-fishing-ocean-clouds-korea-mobile.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    max-height: 100vh;
+  }
+  #urban main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../img/mobile_showcase/yeosu-expo-hotel-korea-harbor-mobile.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    max-height: 100vh;
+  }
+  #seaside main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../img/mobile_showcase/footprints-beach-yeosu-korea-mobile.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    max-height: 100vh;
+  }
+  #korea main::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url('../img/mobile_showcase/baby-buddha-statue-maple-korea-mobile.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    max-height: 100vh;
+  }
+}
+
+/* ///////////////////////////////////////////////// */
+/* landscape orientation for mobile */
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+  #showcase .container-logo {
+    transform: scale(75%);
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 825px) {
+  [hidden_nav] {
+    display: flex;
+  }
+
+  [hidden_logo] {
+    display: none;
+  }
+
+  [hidden_home] {
+    display: list-item;
+  }
+
+  .nav-small-screen {
+    display: none;
+  }
+
+  main {
+    margin-top: 18vh;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  #navbar__plx {
+    justify-content: center;
+    width: 100%;
+    height: 18vh;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 1.5rem;
+  }
+
+  /* shift nav items */
+  #navbar__main .contents .contents-overlay .navigation ul li {
+    padding: 0.5rem;
+  }
+
+  .navigation__home .nav-links {
+    transform: translateX(35%);
+  }
+
+  #navbar__plx .navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #navbar__plx .navigation ul li {
+    margin: auto !important;
+    padding: 0;
+  }
+
+  #navbar__plx .navigation ul li a {
+    padding: 0.75rem;
+  }
+
+  .photo__column {
+    padding: 0.25rem;
+  }
+
+  footer {
+    max-height: 50px;
+    margin-top: 0.7rem;
+  }
+
+  footer h6 {
+    padding: 2rem;
+  }
+
+  /* contact page - flip element order & fix margins*/
+  #contact main {
+    margin: 0;
+  }
+
+  #contact .contact .row {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 670px) {
+  #navbar__main .toggler:checked ~ .contents .contents-overlay {
+    transform: translateX(65vw);
+    /* menu overlay size (for curve arc). Overlay has to increase w smaller screen size to keep equivalent grade of arc */
+    width: 160vw;
+    height: 160vw;
+  }
+}
+
+/* landscape layout for iPhone 5/SE*/
+@media screen and (orientation: landscape) and (max-width: 568px) and (max-height: 320px) {
+  #navbar__main .contents .contents-overlay .navigation ul li {
+    padding: 0.25rem !important;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+}
+
+/* landscape layout for Galaxy Fold */
+@media screen and (orientation: landscape) and (max-width: 653px) and (max-height: 280px) {
+  #navbar__main .contents .contents-overlay .navigation ul li {
+    padding: 0.25rem !important;
+  }
+}
+
+/* hide logo in overlay when menu overlaps */
+@media (max-width: 823px) {
+  .container-logo {
+    z-index: 0 !important;
+  }
+}
